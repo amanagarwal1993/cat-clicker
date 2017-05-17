@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Cat Clicker Premium</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <div class="cat-list">
+            <ul id="cats">
+            
+            </ul>
+        </div>
+        <hr>
+        <div id="current-cat">
+            <h2 id="cat-name"></h2>
+            <a class="click-image" href="#">
+                <img id="image">
+            </a>
+            <p id="clicks"></p>
+            
+            <button class="admin">Admin</button><br><br>
+            
+            <form id="edit-cat" style="display: NONE">
+                <label>Name</label><input name="new-name" type="text"><br>
+                <label>Image url</label><input name="new-url" type="url"><br>
+                <label>Clicks</label><input name="new-clicks" type="number" step="1" min="0"><br>
+                <button class="cancel" type="button">Cancel</button>
+                <button class="submit" type="button">Submit</button>
+            </form>
+            
+        </div>
+    </body>
+
+</html>
